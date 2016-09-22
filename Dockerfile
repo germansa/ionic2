@@ -19,6 +19,4 @@ RUN npm install -g -y \
                ionic@beta \
                gulp
 
-CMD bash -C '/start.sh';'bash'
-
 EXPOSE 3000 5000 8100 35729
