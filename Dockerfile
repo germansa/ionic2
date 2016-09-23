@@ -17,6 +17,7 @@ RUN npm config set unsafe-perm true --global
 
 RUN npm install -g -y \
                ionic@beta \
-               gulp
+               gulp \
+               cordova
 
 WORKDIR /public
