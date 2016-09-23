@@ -19,8 +19,4 @@ RUN npm install -g -y \
                ionic@beta \
                gulp
 
-WORKDIR /projects
-
-EXPOSE 8100 35729
-
-EXPOSE 3000 5000 8100 35729
+WORKDIR /public
