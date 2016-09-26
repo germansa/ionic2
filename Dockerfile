@@ -7,7 +7,6 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
 RUN apt-get update && \
     apt-get install -y -q \
-    iputils-ping net-tools \
     nodejs \
     default-jre \
     && apt-get -y autoclean \
@@ -15,9 +14,8 @@ RUN apt-get update && \
 
 RUN npm config set unsafe-perm true --global
 
-RUN npm install -g -y \
-               ionic@beta \
-               gulp \
-               cordova
+RUN npm install -g -y ionic@beta
+RUN npm install -g -y cordova
+RUN npm install -g -y gulp
 
 WORKDIR /public
